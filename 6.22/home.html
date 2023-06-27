@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>新闻页面</title>
+	<meta charset="utf-8"/>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      header {
+        background-color: #3a7bd5;
+        color: white;
+        padding: 20px;
+      }
+      nav {
+        background-color: white;
+        border-bottom: 1px solid #ddd;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      nav ul li {
+        margin-left: 20px;
+        font-size: 18px;
+      }
+      main {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 200px);
+        flex-direction: column;
+      }
+      .button {
+        background-color: #3a7bd5;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .button:hover {
+        background-color: #1947b5;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>新闻页面</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">主页</a></li>
+        <li><a href="#">登录</a></li>
+        <li><a href="#">注册</a></li>
+        <li><a href="#">管理</a></li>
+		<li><a href="#">上传下载</a></li>
+      </ul>
+      <div class="user-info">欢迎，用户</div>
+    </nav>
+    <main>
+      <h2>新闻</h2>
+      <ul>
+        <li>
+          <h3>震惊！一男子竟然光天化日向别人漏鸟</h3>
+          <p>震惊！一男子竟然光天化日向别人漏鸟</p>
+          <a href="https://www.bilibili.com/video/BV1it411D7Q8/">查看详情</a>
+          <a href="#">评论（12）</a>
+        </li>
+        <li>
+          <h3>这是一条新闻标题</h3>
+          <p>这是新闻内容的简介</p>
+          <a href="#">查看详情</a>
+          <a href="#">评论（8）</a>
+        </li>
+        <li>
+          <h3>这是一条新闻标题</h3>
+          <p>这是新闻内容的简介</p>
+          <a href="#">查看详情</a>
+          <a href="#">评论（2）</a>
+        </li>
+        <li>
+          <h3>这是一条新闻标题</h3>
+          <p>这是新闻内容的简介</p>
+          <a href="#">查看详情</a>
+          <a href="#">评论（0）</a>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>

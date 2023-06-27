@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>登录页面</title>
+	<meta charset='UTF-8'/>
+    <style>
+        body {
+            background: #f6f6f6;
+            font-family: "Helvetica Neue", sans-serif;
+        }
+        h2 {
+            margin: 0;
+            text-align: center;
+            padding: 20px 0;
+            color: #333;
+            font-weight: bold;
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+        .login-box {
+            margin: 50px auto;
+            width: 400px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 25px;
+            background-color: #f6f6f6;
+            box-shadow: inset 0 0 5px 0 rgba(0,0,0,0.2);
+            font-size: 16px;
+            font-weight: bold;
+            font-family: "Helvetica Neue", sans-serif;
+            letter-spacing: 1px;
+            color: #444;
+        }
+        input[type="text"]:focus, input[type="password"]:focus {
+            outline: none;
+            box-shadow: inset 0 0 5px 0 rgba(0,0,0,0.2), 0 0 5px 0 rgba(0,0,0,0.1);
+            background-color: #fff;
+        }
+        input[type="submit"], button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            background-color: #5DABFF;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        input[type="submit"]:hover, button:hover {
+            background-color: #4285F4;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+  <nav>
+      <div class="login-box">
+        <h2>登录页面</h2>
+        <form action="mysql1.php" method="post">
+            <input type="text" id="user" name="user" placeholder="请输入用户名">
+            <input type="password" id="password" name="password" placeholder="请输入密码">
+            <input type="submit" value="登录">
+            <button onclick="window.location.href='http://127.0.0.1/6.22/zc.html'" type="button" id="add">注册</button>
+        </form>
+      </div>
+  </nav>
+</body>
+</html>

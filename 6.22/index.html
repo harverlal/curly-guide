@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>主页面</title>
+    <style>
+      /* 全局样式 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* 头部样式 */
+header {
+  background-color: #8abcd1;
+  color: white;
+  padding: 20px;
+}
+
+/* 导航样式 */
+nav {
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+/* 主体样式 */
+main {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 200px);
+  flex-direction: column;
+}
+
+/* 按钮样式 */
+.button {
+  background-color: #8abcd1;
+  color: white;
+  border: none;
+  padding: 20px 40px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #1947b5;
+}
+
+/* 用户信息样式 */
+.user-info {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* 标题样式 */
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* 按钮块样式 */
+.button-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/* 单个按钮样式 */
+.button-block .button {
+  margin: 10px;
+}
+a {
+  text-decoration: none;
+}
+nav ul li {
+  font-weight: bold;
+}
+
+/* 使用 transition 特性为字体颜色添加动画 */
+nav ul li a {
+  color: black;
+  transition: color 0.3s ease-in-out;
+}
+
+/* 鼠标悬停在链接上时，修改文字颜色 */
+nav ul li a:hover {
+  color: #8abcd1;
+}
+h1{
+text-align:center;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>系统主页面</h1>
+    </header>
+     <nav>
+      <ul>
+        <li><a href="http://127.0.0.1/6.22/index.html">主页</a></li>
+        <li><a href="http://127.0.0.1/6.22/admin.php">新闻管理</a></li>
+        <li><a href="http://127.0.0.1/6.22/updown.html">上传下载</a></li>
+		<li><a href="http://127.0.0.1/6.22/user.php">用户管理</a></li>
+		   <li><a href="http://127.0.0.1/6.22/login.html">退出</a></li>
+      </ul>
+      <div class="user-info">欢迎用户</div>
+    </nav>
+    <main>
+      <h2>欢迎来到用户主页面</h2>
+	  <button class="button" onclick="window.location.href='http://127.0.0.1/6.22/pinlun.php'" type="button" id="add">浏览新闻</button>
+	  <button  class="button"onclick="window.location.href='http://127.0.0.1/6.22/newsadd.html'" type="button" id="add">发布新闻</button>
+	  <button class="button" onclick="window.location.href='http://127.0.0.1/6.22/admin.php'" type="button" id="add">管理新闻</button>
+	  <button class="button" onclick="window.location.href='http://127.0.0.1/6.22/updown.html'" type="button" id="add">上传/下载文件</button>
+      
+    </main>
+  </body>
+</html>

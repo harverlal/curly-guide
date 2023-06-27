@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset='UTF-8'/>
+    <title>注册页面</title>
+    <style>
+        body {
+          margin: 0;
+          padding: 0;
+          font-family: Arial, sans-serif;
+          background-color: #f2f2f2;
+        }
+        header {
+          background-color: #8abcd1;
+          color: white;
+          padding: 20px;
+        }
+        nav {
+          background-color: white;
+          border-bottom: 1px solid #ddd;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 20px;
+        }
+        nav ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+        }
+        nav ul li {
+          margin-left: 20px;
+          font-size: 18px;
+        }
+        main {
+          padding: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: calc(100vh - 200px);
+          flex-direction: column;
+          background-color: white;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+          border-radius: 5px;
+        }
+        h2 {
+          margin: 0;
+          font-size: 24px;
+          color: #333;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        table {
+          border-collapse: collapse;
+        }
+        td {
+          padding: 5px 10px;
+        }
+        label {
+          font-size: 16px;
+          font-weight: bold;
+        }
+        input[type="text"], input[type="password"] {
+          width: 100%;
+          margin: 10px 0;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 16px;
+          font-weight: 500;
+        }
+        button {
+          margin-top: 20px;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          background-color: #3a7bd5;
+          font-size: 16px;
+          font-weight: bold;
+          color: white;
+          cursor: pointer;
+          transition: all 0.3s;
+        }
+        button:hover {
+          background-color: #1947b5;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>注册页面</h1>
+    </header>
+ <nav>
+      <ul>
+        <li><a href="http://127.0.0.1/6.22/login.html">登录</a></li>
+		  <li><a href="http://127.0.0.1/6.22/login.html">退出</a></li>
+      </ul>
+      <div class="user-info">欢迎注册</div>
+    </nav>
+    <main>
+      <h2>欢迎注册</h2>
+      <form action='mysql.php' method='post'>
+	  <table>
+	  <tr>
+			<td><label for="user">用户名:</label></td>
+			<td><input type="text" id="user" name="user" /></td>
+			
+	  </tr>
+	  <br>
+	  <tr>
+			<td><label for="password">密码:</label></td>
+			<td><input type="password" id="password" name="password" /></td>
+			
+	  </tr>
+	  <tr>
+			<td><label for="password">昵称:</label></td>
+			<td><input type="text" id="password" name="name" /></td>
+			
+	  </tr><tr>
+			<td><label for="password">真实姓名:</label></td>
+			<td><input type="text" id="password" name="realname" /></td>
+			
+	  </tr>
+	  <tr>
+			<td><label for="password">身份证号:</label></td>
+			<td><input type="text" id="password" name="id" /></td>
+			
+	  </tr>
+	  <tr>
+			<td><label for="password">手机号码:</label></td>
+			<td><input type="text" id="password" name="phone" /></td>
+			
+	  </tr>
+	  </table>
+		<br>
+        <button class="button">注册</button>
+      </form>
+    </main>
+  </body>
+</html>

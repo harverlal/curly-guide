@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>修改密码</title>
+	<meta charset='UTF-8'/>
+    <style>
+        body {
+            background-color: #c4cbcf;
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input[type="submit"] {
+            margin-top: 10px;
+        }
+		button{
+		 margin-top: 10px;
+		}
+		.login{
+		margin:auto;
+		margin-top:200px;
+		}
+    </style>
+</head>
+<body>
+  <nav>
+      <div class="user-info">欢迎用户修改密码</div>
+   <div class='login'>
+    <h2>修改密码</h2>
+    <form action='up.php' method='post'>
+	<table>
+		<tr>
+			<td><label for="username">密码:</label></td>
+			<td> <input type="text" id="user" name="pwd"></td>
+		</tr>
+		<tr>
+			<td> <label for="password">确认密码:</label></td>
+			<td><input type="password" id="password" name="password"></td>
+		</tr>
+		<tr>
+			<td><input type="submit" value="确认修改"></td>
+		</tr>
+	</table>
+    </form>
+  </div>
+</body>
+</html>

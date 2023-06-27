@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>上传下载页面</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      header {
+        background-color: #8abcd1;
+        color: white;
+        padding: 20px;
+      }
+      nav {
+        background-color: white;
+        border-bottom: 1px solid #ddd;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      nav ul li {
+        margin-left: 20px;
+        font-size: 18px;
+      }
+      main {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 200px);
+        flex-direction: column;
+      }
+      .button {
+        background-color: #3a7bd5;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .button:hover {
+        background-color: #1947b5;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>上传下载页面</h1>
+    </header>
+ <nav>
+      <ul>
+        <li><a href="http://127.0.0.1/6.22/sy.html">主页</a></li>
+        <li><a href="http://127.0.0.1/6.22/login.html">登录</a></li>
+        <li><a href="http://127.0.0.1/6.22/zc.html">注册</a></li>
+        <li><a href="http://127.0.0.1/6.22/admin.php">管理</a></li>
+        <li><a href="http://127.0.0.1/6.22/updown.html">上传下载</a></li>
+      </ul>
+      <div class="user-info">欢迎，用户</div>
+    </nav>
+    <main>
+      <h2>上传/下载文件</h2>
+    <form action='file.php' method='post' enctype='multipart/form-data'>
+	文件：<input type='file' name='file'/>
+	<button>上传</button>
+	</form>
+      <ul>
+        <li>
+          <a href="#">文件1.pdf</a>
+          <a href="#">下载</a>
+          <a href="#">删除</a>
+        </li>
+        <li>
+          <a href="#">文件2.doc</a>
+          <a href="#">下载</a>
+          <a href="#">删除</a>
+        </li>
+        <li>
+          <a href="#">文件3.jpg</a>
+          <a href="#">下载</a>
+          <a href="#">删除</a>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
